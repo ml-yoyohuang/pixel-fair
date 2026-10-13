@@ -1,0 +1,8 @@
+{
+  "viewport": "390x844",
+  "browser": "installed Chrome headless",
+  "frames": 241,
+  "elapsedMs": 4008.2999999970198,
+  "fps": 60.125240126781726,
+  "physicalDevice": false
+}

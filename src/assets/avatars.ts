@@ -1,0 +1,1 @@
+export const avatars = [{ id: 'human-amber', name: '小杏', note: '把故事裝進草帽' }, { id: 'human-blue', name: '阿澄', note: '沿著晚風走走' }, { id: 'human-sage', name: '青禾', note: '喜歡窗邊的光' }, { id: 'cat', name: '奶茶貓', note: '今天不想太早回家' }, { id: 'dog', name: '豆柴', note: '每一攤都想看' }, { id: 'rabbit', name: '白兔', note: '帶一本書去旅行' }];
