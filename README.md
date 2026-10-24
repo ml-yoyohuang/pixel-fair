@@ -15,6 +15,10 @@ npm run dev
 
 開啟终端機顯示的本機網址，預設 `http://127.0.0.1:5173/`。
 
+預設使用內建 Demo 資料。開始接 API 時，可在根目錄建立 `.env.local` 並設定 `VITE_CONTENT_API_URL`；路徑與 DTO 規格見 [docs/CONTENT_API.md](docs/CONTENT_API.md)。
+
+管理後台雛形位於 `/admin.html`。要啟用雲端儲存，先依 [後端與管理後台指南](docs/ADMIN_BACKEND_GUIDE.md) 建立 Supabase project、套用 migration，再由 `.env.example` 複製設定到 `.env.local`。沒有設定 Supabase 時不會出現假登入；網站仍使用 Demo 資料。
+
 ```powershell
 npm run typecheck
 npm test

@@ -1,0 +1,31 @@
+@import url('../styles/app.css');
+
+:root { color-scheme: light; }
+body { min-width: 320px; min-height: 100vh; margin: 0; background: #f5eddf; color: #3e342b; font-family: system-ui, sans-serif; }
+#admin-root { max-width: 1100px; margin: 0 auto; padding: clamp(16px, 4vw, 40px); }
+.admin-shell { display: grid; gap: 20px; }
+.admin-header { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.admin-card { padding: 24px; border: 2px solid #d8c6a8; border-radius: 12px; background: #fffaf0; box-shadow: 0 5px 0 #e9dcc6; }
+.admin-form { display: grid; gap: 14px; max-width: 520px; }
+.admin-field { display: grid; gap: 6px; font-weight: 650; }
+.admin-field input, .admin-field select, .admin-field textarea { width: 100%; box-sizing: border-box; padding: 10px 12px; border: 1px solid #aa987b; border-radius: 6px; background: white; color: inherit; font: inherit; }
+.admin-field input[type=checkbox] { width: 24px; height: 24px; margin: 0; }
+.admin-field textarea { min-height: 300px; font: 13px/1.5 ui-monospace, monospace; tab-size: 2; }
+.admin-field textarea.admin-lines-input { min-height: 100px; font: inherit; }
+.admin-field textarea.admin-json-input { min-height: 160px; }
+.admin-editor-fields { display: grid; gap: 14px; max-width: 620px; padding: 16px; border: 1px solid #e4d7c2; border-radius: 8px; background: #fffdf8; }
+.admin-advanced-json { max-width: 620px; }
+.admin-advanced-json summary { min-height: 44px; display: flex; align-items: center; font-weight: 700; cursor: pointer; }
+.admin-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; }
+.admin-button { min-height: 44px; padding: 9px 14px; border: 1px solid #76614a; border-radius: 7px; background: #6f4935; color: white; font: inherit; cursor: pointer; }
+.admin-button.secondary { background: #fffaf0; color: #493b2c; }
+.admin-button.danger { background: #8e3430; }
+.admin-list { width: 100%; border-collapse: collapse; }
+.admin-list th, .admin-list td { padding: 10px 8px; border-bottom: 1px solid #dfd2bc; text-align: left; vertical-align: top; }
+.admin-list th { font-size: .9rem; }
+.admin-status { min-height: 1.5em; color: #71472d; }
+.admin-error { color: #9e2e2a; }
+.admin-muted { color: #756b5c; }
+.admin-qr { width: 220px; max-width: 100%; padding: 8px; background: white; border: 1px solid #ded4c2; }
+.admin-code { overflow-wrap: anywhere; font-family: ui-monospace, monospace; }
+@media (max-width: 650px) { .admin-card { padding: 16px; overflow-x: auto; } .admin-header { align-items: flex-start; flex-direction: column; } }
